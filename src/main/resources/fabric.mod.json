@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "therium",
+	"id": "template",
 	"version": "${version}",
-	"name": "Therium",
+	"name": "Template",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"froze"
@@ -12,18 +12,21 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/therium/icon.png",
+	"icon": "assets/packetl/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.therium.Therium"
+			"com.packetl.Packetl"
+		],
+		"client": [
+			"com.packetl.PacketlModClient"
 		],
 		"fabric-datagen": [
-			"com.therium.TheriumModDataGenerator"
+			"com.packetl.PacketlModDataGenerator"
 		]
 	},
 	"mixins": [
-		"therium.mixins.json",
+		"packetl.mixins.json",
 		{
 			"config": "modid.client.mixins.json",
 			"environment": "client"
